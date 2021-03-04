@@ -110,3 +110,33 @@ let compra: object
 
 ~~~ 
 
+* Tipo por Inferência
+~~~TypeScript
+function passarDetalhes( id: number | string , item: string){
+	console.log("Temos identificação: ${id} e o seu item: ${item}.")
+}
+
+passarDetalhes(123, "texto")	// correto
+passarDetalhes("123", "texto")	// correto tmb devido ao Union |
+~~~
+
+* Type Alias (Apelido)
+~~~TypeScript
+// type aliases
+type Uid = number | string | undefined
+
+function passarDetalhes( id: Uid , item: string){
+	console.log("Temos identificação: ${id} e o seu item: ${item}.")
+}
+
+passarDetalhes(123, "texto")	// correto
+passarDetalhes("123", "texto")	// correto tmb devido ao Union |
+~~~
+
+~~~TypeScript
+type SO = "Windows" | "linux" | "MacOS"
+
+let sistema: SO
+~~~
+
+
