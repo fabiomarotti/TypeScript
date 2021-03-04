@@ -181,7 +181,8 @@ const contaPB : PessoaBens ={
 - `partial`	// Todas os elementos são opcionais (type)
 - `required`	// Todas os elementos são obrigatórios (type)
 - `readonly`	// apenas leitura da variavel, não pode ser reatribuido
-
+- `abstract` 
+- 
 - `recored` <key, type>
 - `pick`
 - `omit`
