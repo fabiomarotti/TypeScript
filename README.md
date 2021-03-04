@@ -14,27 +14,28 @@ https://www.typescriptlang.org/
 
 # Tipos de dados
 
- * Boolean
+ * `boolean`
 ~~~TypeScript
 //boolean (true / false)
 let isOpen: boolean
     isOpen = true / false
 ~~~
 
-* String
+* `string`
 ~~~TypeScript
 // String ('foo' , "foo", `foo`) // backstick
 let message: string
     message = `foo ${ isOpen }`  // incluir variavel isOpen
 ~~~
 
+* `number`
 ~~~TypeScript
 // number (int, float, hex, binary)
 let total: number
    total = 20.3  / 0xff0 (hexa)
 ~~~
 
-* Array
+* `Array`
 ~~~TypeScript
 // array
 let items: number[]  //array de numeros
@@ -50,14 +51,14 @@ let items: Array<string>	// notação generic
     items['um', 'dois']
 ~~~
 
-* Tuple
+* `tuple`
 ~~~TypeScript
 // tuple: array sabe o numero de elementos e o tipo
 let title: [number, string, boolen]
     title = [1 , "nome", true]
 ~~~
 
-* Enum
+* `enum`
 ~~~TypeScript
 // enum : conjunto Chave/valor
 enum Colors {
@@ -66,7 +67,7 @@ enum Colors {
 }
 ~~~
 
-* Any
+* `any`
 ~~~TypeSript
 // any : QUALQUER COISA
 let coisa: any
@@ -75,7 +76,7 @@ let coisa: any
     coisa = 123    // numero
 ~~~
 
-* Void
+* `void`
 ~~~TypeScript
 // void
 function logger(): void{	// tipar a funçao >> retorna nada, float
@@ -83,14 +84,14 @@ function logger(): void{	// tipar a funçao >> retorna nada, float
 }
 ~~~
 
-* Null
+* `null`
 ~~~TypeScript
 // null / undefined
 // tipo não primitivo
 type Bla = string | underfined   // pode ser strin ou nao definido
 ~~~
 
-* Never
+* `never`
 ~~~TypeScript
 // never (nunca vai retornar)
 function error(): never {
@@ -98,7 +99,7 @@ function error(): never {
 }
 ~~~
 
-* Object
+* `Object`
 ~~~TypeScript
 // Object "qualque coisa não primitiva" (equivale a uma Classe)
 let cart: object
