@@ -17,22 +17,22 @@ https://www.typescriptlang.org/
  * `boolean`
 ~~~TypeScript
 //boolean (true / false)
-let isOpen: boolean
-    isOpen = true / false
+let conectado: boolean
+    conectado = true / false
 ~~~
 
 * `string`
 ~~~TypeScript
-// String ('foo' , "foo", `foo`) // backstick
+// String ('texto' , "texto", `texto`) // backstick
 let message: string
-    message = `foo ${ isOpen }`  // incluir variavel isOpen
+    message = `texto ${ conectado }`  // incluir variavel isOpen
 ~~~
 
 * `number`
 ~~~TypeScript
 // number (int, float, hex, binary)
 let total: number
-   total = 20.3  / 0xff0 (hexa)
+   total = 45.6  / 0xff0 (hexa)
 ~~~
 
 * `Array`
@@ -54,16 +54,16 @@ let items: Array<string>	// notação generic
 * `tuple`
 ~~~TypeScript
 // tuple: array sabe o numero de elementos e o tipo
-let title: [number, string, boolen]
-    title = [1 , "nome", true]
+let titulo: [number, string, boolen]
+    titulo = [5 , "texto", true]
 ~~~
 
 * `enum`
 ~~~TypeScript
-// enum : conjunto Chave/valor
-enum Colors {
-	white = '#fff',   
-	black = '#000'
+// enum : conjunto Chave/Valor
+enum Cores {
+	branco = '#fff',   
+	preto  = '#000'
 }
 ~~~
 
@@ -79,8 +79,8 @@ let coisa: any
 * `void`
 ~~~TypeScript
 // void
-function logger(): void{	// tipar a funçao >> retorna nada, float
-	console.log('foo')
+function menssagem(): void{	// tipar a funçao >> retorna nada, float, ..
+	console.log('texto')
 }
 ~~~
 
@@ -88,23 +88,24 @@ function logger(): void{	// tipar a funçao >> retorna nada, float
 ~~~TypeScript
 // null / undefined
 // tipo não primitivo
-type Bla = string | underfined   // pode ser strin ou nao definido
+type coisa = string | underfined   // pode ser string ou nao definido
 ~~~
 
 * `never`
 ~~~TypeScript
 // never (nunca vai retornar)
-function error(): never {
-	throw new error("Error");
+function menssagem(): never {
+	throw new messagem("Error");
 }
 ~~~
 
 * `Object`
 ~~~TypeScript
 // Object "qualque coisa não primitiva" (equivale a uma Classe)
-let cart: object
-    cart = {
-	key: "chave"
+let compra: object
+    compra = {
+	id: 	"identificação",
+	valor: 	123.45
     }
 
 ~~~ 
