@@ -8,7 +8,9 @@ https://www.typescriptlang.org/
 * Instalação:
 
 $ npm install -g typescript	    // pre-requesito: Node.js
+
 $ tsc nome_arquivo.ts --watch   // Compilar via terminal
+
 $ tsc --init                    // cria arquivo tsconfig.jason (conf, regras, compatibilidade,..)
 
 # Sintaxe
