@@ -142,7 +142,7 @@ let sistema: SO
 * Type Aliases com Intersection
 ~~~TypeScript
 type Pessoa = {
-	id: 	numver;
+	id: 	number;
 	nome: 	string;
 	email?: string; 	// ?: torna opcional de preencher o campo
 }
@@ -170,4 +170,63 @@ const contaPB : PessoaBens ={
 } 
 ~~~
 
+# Classes
+* Pre-requesito instalar:
+$ npm install -g nodemon
+$ nodemon dist/nome_arquivo.js   // onde fica o arquivo JavaScript
 
+~~~TypeScript
+class Pessoa{
+    nome: string;
+    idade: number;
+    
+    // Construtor
+    constructor(n: string, i: number){
+        this.nome  = n;
+        this.idade = i;
+    }
+    
+    // Método
+    dizerBomBia(): void{
+      console.log("Bom dia ${this.nome} e idade: ${this.idade} .");
+    }
+}    
+~~~
+
+~~~TypeScript
+    const p = new Pessoa("Fulano", 30);
+    
+console.log(p);		// Objeto
+console.log(p.nome);	// Propriedade específica do objeto
+console.log(p.idade);
+p.dizerBomBia();
+~~~
+
+~~~TypeScrit
+class Funcionario extends Pessoa{
+   salario : number;
+   cargo   : string;
+   
+   constructor(n: string, i:number, s: number, c: string){
+	super(n, i);
+	
+     	this.salario = s;
+     	this.cargo   = c;
+   }
+   
+   function dadosFuncionario(): void{
+    console.log("Funcionário: ${n} , Idade: ${i}, Salário: R$ ${s} ");
+   }
+}
+~~~
+
+~~~TypeScript
+ const f = Funcionario("Fulano", 33, 1500.00 , "técnico");
+ 
+ console.log(f.nome);
+ console.log(f.idade);
+ f.dizerBomBia();
+ f.dadosFuncionario();
+ ~~~
+ 
+ 
