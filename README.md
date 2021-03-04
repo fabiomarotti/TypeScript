@@ -1,5 +1,6 @@
 # TypeScript
 Repositório com estudos realizados sobre TypeScript
+
 Considerações: TypeScript > ECMScript6 (2015) > ECMAScript5 (2009)
 
 https://www.typescriptlang.org/
@@ -13,11 +14,14 @@ https://www.typescriptlang.org/
 
 # Tipos de dados
 
-//boolean (true / false)
+ * Boolean
 ~~~TypeScript
+//boolean (true / false)
 let isOpen: boolean
     isOpen = true / false
 ~~~
+
+* String
 ~~~TypeScript
 // String ('foo' , "foo", `foo`) // backstick
 let message: string
@@ -30,6 +34,7 @@ let total: number
    total = 20.3  / 0xff0 (hexa)
 ~~~
 
+* Array
 ~~~TypeScript
 // array
 let items: number[]  //array de numeros
@@ -45,19 +50,24 @@ let items: Array<string>	// notação generic
     items['um', 'dois']
 ~~~
 
+* Tuple
 ~~~TypeScript
 // tuple: array sabe o numero de elementos e o tipo
 let title: [number, string, boolen]
     title = [1 , "nome", true]
 ~~~
 
+* Enum
 ~~~TypeScript
 // enum : conjunto Chave/valor
 enum Colors {
 	white = '#fff',   
 	black = '#000'
 }
+~~~
 
+* Any
+~~~TypeSript
 // any : QUALQUER COISA
 let coisa: any
     coisa = "true" // string
@@ -65,6 +75,7 @@ let coisa: any
     coisa = 123    // numero
 ~~~
 
+* Void
 ~~~TypeScript
 // void
 function logger(): void{	// tipar a funçao >> retorna nada, float
@@ -72,25 +83,28 @@ function logger(): void{	// tipar a funçao >> retorna nada, float
 }
 ~~~
 
+* Null
 ~~~TypeScript
 // null / undefined
 // tipo não primitivo
 type Bla = string | underfined   // pode ser strin ou nao definido
 ~~~
 
+* Never
 ~~~TypeScript
 // never (nunca vai retornar)
 function error(): never {
 	throw new error("Error");
 }
 ~~~
+
+* Object
 ~~~TypeScript
-// Object "qualque coisa não primitiva"
+// Object "qualque coisa não primitiva" (equivale a uma Classe)
 let cart: object
     cart = {
 	key: "chave"
     }
-//aceita pq é um objeto mas se passa diretamente 
-// não passar string, boolean, number
+
 ~~~ 
 
