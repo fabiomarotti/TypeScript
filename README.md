@@ -171,6 +171,29 @@ const contaPB : PessoaBens ={
 } 
 ~~~
 
+# Modificadores de acesso
+`public` 	// acesso total (padrão)
+`private`	// acesso apenas dentro da classe
+`protected`	// acesso apenas dentro da classe e aos seus herdeiros
+`static` 		// acesso nivel de classe e nao de instancia	
+
+`partial`	// Todas os elementos são opcionais (type)
+`required`	// Todas os elementos são obrigatórios (type)
+`readonly`	// apenas leitura da variavel, não pode ser reatribuido
+
+`recored` <key, type>
+`pick`
+`omit`
+`exclude`
+`extract`
+`NonNullable` <type>
+`parameters` 
+`constructorParameters`
+`returnType`
+`intanceType`
+
+
+
 # Classes
 * Pre-requesito instalar:
 $ npm install -g nodemon
@@ -231,4 +254,7 @@ class Funcionario extends Pessoa{
  f.dadosFuncionario();
  ~~~
  
+ # Interface
+ 
+ # Modulos
  
