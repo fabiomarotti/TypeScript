@@ -139,4 +139,35 @@ type SO = "Windows" | "linux" | "MacOS"
 let sistema: SO
 ~~~
 
+* Type Aliases com Intersection
+~~~TypeScript
+type Pessoa = {
+	id: 	numver;
+	nome: 	string;
+	email?: string; 	// ?: torna opcional de preencher o campo
+}
+
+type Bens ={
+	dinheiro: number;
+	casa: boolean;
+}
+
+type PessoaBens: Pessoa & Bens
+~~~
+
+~~~TypeScript
+// criando variavel
+const conta : Pessoa = {
+   id: 	  123,
+   nome:  "Fulano
+}
+
+const contaPB : PessoaBens ={
+   id: 456,
+   nome: "Ciclano",
+   dinheiro: 500,
+   casa: true
+} 
+~~~
+
 
