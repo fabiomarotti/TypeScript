@@ -6,9 +6,10 @@ Considerações: TypeScript > ECMScript6 (2015) > ECMAScript5 (2009)
 https://www.typescriptlang.org/
 
 * Instalação:
-* $ npm install -g typescript	    // pre-requesito: Node.js
-* $ tsc nome_arquivo.ts --watch   // Compilar via terminal
-* $ tsc --init                    // cria arquivo tsconfig.jason (conf, regras, compatibilidade,..)
+
+$ npm install -g typescript	    // pre-requesito: Node.js
+$ tsc nome_arquivo.ts --watch   // Compilar via terminal
+$ tsc --init                    // cria arquivo tsconfig.jason (conf, regras, compatibilidade,..)
 
 # Sintaxe
 
@@ -194,7 +195,7 @@ class Pessoa{
 ~~~
 
 ~~~TypeScript
-    const p = new Pessoa("Fulano", 30);
+const p = new Pessoa("Fulano", 30);
     
 console.log(p);		// Objeto
 console.log(p.nome);	// Propriedade específica do objeto
@@ -207,13 +208,14 @@ class Funcionario extends Pessoa{
    salario : number;
    cargo   : string;
    
+   // Construtor
    constructor(n: string, i:number, s: number, c: string){
 	super(n, i);
-	
      	this.salario = s;
      	this.cargo   = c;
    }
    
+   // Métodos
    function dadosFuncionario(): void{
     console.log("Funcionário: ${n} , Idade: ${i}, Salário: R$ ${s} ");
    }
