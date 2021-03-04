@@ -199,8 +199,11 @@ const contaPB : PessoaBens ={
 
 
 # Classes
+
 * Pre-requesito instalar:
+
 $ npm install -g nodemon
+
 $ nodemon dist/nome_arquivo.js   // onde fica o arquivo JavaScript
 
 ~~~TypeScript
